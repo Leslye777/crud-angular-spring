@@ -5,7 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LelaoModule } from './lelao/lelao.module';
+// import { LelaoModule } from './lelao/lelao.module';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { LelaoModule } from './lelao/lelao.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    LelaoModule
+    // LelaoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
