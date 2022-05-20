@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http'
+
 import { Course } from '../model/course';
 
 @Injectable({
@@ -6,7 +8,7 @@ import { Course } from '../model/course';
 })
 export class CoursesService {
 
-  constructor() { }
+  constructor(private httpClient: HttpClient) { }
 
   list(): Course[]{
     return [ {_id: '1', name: 'Angular', category: 'front-end'}, {_id: '1', name: 'Angular', category: 'front-end'},
